@@ -1,11 +1,15 @@
-// loader
+//loader
+window.onload = () => {
+  fadeOut();
+};
+
 function loader() {
-  document.querySelector("loader-container").classList.add("active");
+  document.querySelector(".loadercontainer").classList.add("active");
 }
 
-// function fadeOut() {
-//   setTimeout(loader, 1000);
-// }
+function fadeOut() {
+  setTimeout(loader, 3000);
+}
 
 /*==== Menu Show ===*/
 const showMenu = (toggleId, navId) => {
